@@ -1,11 +1,6 @@
-(function (_, Kotlin) {
-  function tap() {
-    console.log("Tapped")
-    Kotlin;
+kotlin = require("kotlin");
+exports.tap =   function tap() {
     console.log("Calling GC")
     global.gc();
     console.log("GC done")
-  }
-  _.tap = tap;
-  return _;
-}(module.exports, require('kotlin')));
+}
