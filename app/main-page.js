@@ -1,4 +1,4 @@
-kotlin = require("kotlin");
+lodash = require("lodash");
 exports.tap =   function tap() {
     console.log("Calling GC")
     global.gc();
